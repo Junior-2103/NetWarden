@@ -1,4 +1,4 @@
-name: /mnt/hd/jose/miniforge3/envs/netwarden
+name: netwarden
 channels:
   - conda-forge
 dependencies:
