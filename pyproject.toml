@@ -1,0 +1,35 @@
+[project]
+name = "netwarden"
+version = "0.1.0"
+description = "Sniffer + bloqueador de rede com IA"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]",
+    "scapy",
+    "pydantic>=2.0",
+    "rich",
+    "typer[all]",
+    "scikit-learn",
+    "pandas",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy",
+    "black",
+    "pre-commit",
+    "pyright",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+strict = true
+warn_unused_ignores = true
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]

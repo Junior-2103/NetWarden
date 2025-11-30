@@ -1,0 +1,4 @@
+extend = "pyproject.toml"
+
+[lint]
+extend-select = ["T201"]  # print statements
